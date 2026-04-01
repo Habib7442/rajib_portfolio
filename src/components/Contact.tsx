@@ -6,15 +6,15 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-navy">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="glass p-12 md:p-20 rounded-[3rem] relative overflow-hidden">
+        <div className="glass p-8 md:p-20 rounded-[3rem] relative overflow-hidden">
           {/* Background Decorative Element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-teal/10 blur-[100px] rounded-full" />
           
-          <div className="grid md:grid-cols-2 gap-16 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 relative z-10">
             <div>
               <h2 className="text-teal font-mono text-sm mb-4 uppercase tracking-widest">Get in Touch</h2>
-              <h3 className="text-5xl font-display font-bold mb-6">Let's <span className="text-teal">Collaborate</span></h3>
-              <p className="text-white/60 text-lg mb-12 leading-relaxed">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">Let's <span className="text-teal text-wrap">Collaborate</span></h3>
+              <p className="text-white/60 text-base md:text-lg mb-12 leading-relaxed">
                 Open to research collaborations, PhD opportunities, and VLSI/semiconductor roles. 
                 Feel free to reach out for any inquiries or just to connect.
               </p>
@@ -27,9 +27,9 @@ export default function Contact() {
                   <div className="p-4 bg-teal/10 rounded-2xl text-teal group-hover:bg-teal group-hover:text-navy transition-all">
                     <FaEnvelope size={20} />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Email</p>
-                    <p className="text-white font-medium">rajibsutradhar858@gmail.com</p>
+                    <p className="text-white font-medium break-all sm:break-normal truncate-hover">rajibsutradhar858@gmail.com</p>
                   </div>
                 </a>
               </div>
@@ -42,9 +42,9 @@ export default function Contact() {
                   href="mailto:rajibsutradhar858@gmail.com"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-12 py-5 bg-teal text-navy font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-white transition-all shadow-[0_0_30px_rgba(0,212,255,0.3)]"
+                  className="px-6 py-3.5 bg-teal text-navy font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-white transition-all shadow-[0_0_20px_rgba(0,212,255,0.2)] whitespace-nowrap w-fit mx-auto"
                 >
-                  <FaPaperPlane size={18} />
+                  <FaPaperPlane size={14} />
                   Email Me Directly
                 </motion.a>
                 <p className="mt-6 text-white/30 text-xs font-mono uppercase tracking-widest">Available for Collaborations</p>
